@@ -5,7 +5,7 @@
 ## Install
 
 To install through [Package Control](http://wbond.net/sublime_packages/package_control),
-search for **JavaScript & NodeJS Snippets**. If you still don't have Package Control in Sublime Text, [go get it](http://wbond.net/sublime_packages/package_control/installation).
+search for **JavaScript & Node.js Snippets**. If you still don't have Package Control in Sublime Text, [go get it](http://wbond.net/sublime_packages/package_control/installation).
 It's pure awesomeness.
 
 If you prefer to install it manually, you can download the package and put it inside your `Packages` directory. It should work but will not update automatically.
@@ -28,130 +28,6 @@ console.error(${1:obj});
 
 ```javascript
 console.log(${1:obj});
-```
-
-### [cw] console.warn
-
-```javascript
-console.warn(${1:obj});
-```
-
-### [de] debugger
-
-```javascript
-debugger;
-```
-
-## DOM
-
-### [ae] addEventListener
-
-```javascript
-${1:document}.addEventListener('${2:event}', function(e) {
-	${3}
-});
-```
-
-### [ac] appendChild
-
-```javascript
-${1:document}.appendChild(${2:elem});
-```
-
-### [rc] removeChild
-
-```javascript
-${1:document}.removeChild(${2:elem});
-```
-
-### [cel] createElement
-
-```javascript
-${1:document}.createElement(${2:elem});
-```
-
-### [cdf] createDocumentFragment
-
-```javascript
-${1:document}.createDocumentFragment(${2:elem});
-```
-
-### [ca] classList.add
-
-```javascript
-${1:document}.classList.add('${2:class}');
-```
-
-### [ct] classList.toggle
-
-```javascript
-${1:document}.classList.toggle('${2:class}');
-```
-
-### [cr] classList.remove
-
-```javascript
-${1:document}.classList.remove('${2:class}');
-```
-
-### [gi] getElementById
-
-```javascript
-${1:document}.getElementById('${2:id}');
-```
-
-### [gc] getElementsByClassName
-
-```javascript
-${1:document}.getElementsByClassName('${2:class}');
-```
-
-### [gt] getElementsByTagName
-
-```javascript
-${1:document}.getElementsByTagName('${2:tag}');
-```
-
-### [ga] getAttribute
-
-```javascript
-${1:document}.getAttribute('${2:attr}');
-```
-
-### [sa] setAttribute
-
-```javascript
-${1:document}.setAttribute('${2:attr}', ${3:value});
-```
-
-### [ra] removeAttribute
-
-```javascript
-${1:document}.removeAttribute('${2:attr}');
-```
-
-### [ih] innerHTML
-
-```javascript
-${1:document}.innerHTML = '${2:elem}';
-```
-
-### [tc] textContent
-
-```javascript
-${1:document}.textContent = '${2:content}';
-```
-
-### [qs] querySelector
-
-```javascript
-${1:document}.querySelector('${2:selector}');
-```
-
-### [qsa] querySelectorAll
-
-```javascript
-${1:document}.querySelectorAll('${2:selector}');
 ```
 
 ## Loop
@@ -200,14 +76,6 @@ ${1:ClassName}.prototype.${2:methodName} = function(${3:arguments}) {
 }
 ```
 
-### [iife] immediately-invoked function expression
-
-```javascript
-(function(window, document, undefined) {
-	${1}
-})(window, document);
-```
-
 ### [call] function call
 
 ```javascript
@@ -246,25 +114,7 @@ setTimeout(function() {
 }, ${1:delay});
 ```
 
-## NodeJS
-
-### [ase] assert.equal
-
-```javascript
-assert.equal(${1:actual}, ${2:expected});
-```
-
-### [asd] assert.deepEqual
-
-```javascript
-assert.deepEqual(${1:actual}, ${2:expected});
-```
-
-### [asn] assert.notEqual
-
-```javascript
-assert.notEqual(${1:actual}, ${2:expected});
-```
+## Node.js
 
 ### [me] module.exports
 
@@ -292,28 +142,6 @@ describe('${1:description}', function() {
 	${2}
 });
 ```
-### [ita] it asynchronous
-
-```javascript
-it('${1:description}', function(done) {
-	${2}
-});
-```
-
-### [its] it synchronous
-
-```javascript
-it('${1:description}', function() {
-	${2}
-});
-```
-
-### [itp] it pending
-
-```javascript
-it('${1:description}');
-```
-
 ## Misc
 
 ### [us] use strict
@@ -350,8 +178,8 @@ prompt('${1:msg}');
 
 ## History
 
-Check [Releases](https://github.com/zenorocha/sublime-javascript-snippets/releases) for detailed changelog.
+Check [Releases](https://github.com/a0viedo/sublime-javascript-snippets/releases) for detailed changelog.
 
 ## License
 
-[MIT License](http://zenorocha.mit-license.org/) © Zeno Rocha
+[MIT License](LICENSE.MD) © Alejandro Oviedo
